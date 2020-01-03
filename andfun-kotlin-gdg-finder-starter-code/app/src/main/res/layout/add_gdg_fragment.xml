@@ -28,6 +28,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginEnd="@dimen/spacing_normal"
                     app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/add_gdg"
                     android:layout_marginTop="@dimen/spacing_normal"/>
 
             <ImageView
@@ -42,6 +43,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextName"
+                android:contentDescription="@string/stage_image_description"
                     android:scaleType="centerCrop"/>
 
             <EditText
@@ -56,6 +58,7 @@
                     android:layout_marginEnd="32dp"
                     android:layout_marginBottom="4dp"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextEmail"
+                android:hint="@string/your_name_label"
                     android:singleLine="true"/>
 
             <EditText
@@ -70,6 +73,7 @@
                     android:layout_marginEnd="32dp"
                     android:layout_marginBottom="4dp"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextCity"
+                android:hint="@string/email_label"
                     android:singleLine="true"/>
             <EditText
                     android:id="@+id/EditTextCity"
@@ -83,6 +87,7 @@
                     android:layout_marginEnd="32dp"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextCountry"
                     android:layout_marginBottom="4dp"
+                android:hint="@string/city_label"
                     android:singleLine="true"/>
             <EditText
                     android:id="@+id/EditTextCountry"
@@ -96,6 +101,7 @@
                     android:layout_marginBottom="4dp"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextRegion"
                     android:layout_marginTop="4dp"
+                android:hint="@string/country_label"
                     android:singleLine="true"/>
             <EditText
                     android:id="@+id/EditTextRegion"
@@ -109,6 +115,7 @@
                     android:layout_marginEnd="32dp"
                     android:layout_marginBottom="4dp"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextWhy"
+                android:hint="@string/region_label"
                     android:singleLine="true"/>
 
             <!--wrap in a layout to group-->
@@ -135,6 +142,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/EditTextRegion"
                     android:layout_marginBottom="1dp"
                     app:layout_constraintBottom_toTopOf="@+id/EditTextWhy"
+                android:contentDescription="@string/motivation"
                     app:layout_constraintStart_toStartOf="parent"/>
 
             <EditText
@@ -147,6 +155,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toTopOf="@+id/button"
+                android:hint="@string/enter_motivation"
                     android:layout_marginTop="32dp"
                     android:layout_marginEnd="32dp"
                     android:layout_marginStart="32dp"
@@ -167,6 +176,7 @@
                     android:textSize="12sp"
                     android:layout_marginBottom="12dp"
                     android:layout_marginEnd="40dp"
+                android:contentDescription="@string/submit_button_description"
                     android:onClick="@{() -> viewModel.onSubmitApplication()}"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
